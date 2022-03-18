@@ -63,15 +63,17 @@ class _loginPageState extends State<loginPage> {
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Colors.red
+                            color: Colors.blue
                         ),
                         height: 45,
                          child: AuthButton(
+                           onpres: (){},
                             color: Colors.blue,
+                            textcolor: Colors.white,
                             name: "LogIn",
                            fontsize: 25.0,
                            radius: 10.0,
-                           splashcolor: Colors.grey,
+                           splashcolor: Colors.blueAccent,
                           ),
                       )
                     ],

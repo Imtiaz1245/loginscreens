@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'AuthenticationModule/ViewController/loginscreen.dart';
 import 'AuthenticationModule/ViewController/loginscreen2.dart';
+import 'AuthenticationModule/ViewController/change_password.dart';
+import 'AuthenticationModule/ViewController/profilecontroller.dart';
+
+
 void main(){
   runApp(
     MaterialApp(

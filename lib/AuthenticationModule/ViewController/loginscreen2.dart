@@ -1,4 +1,6 @@
+import 'package:easyshop/AuthenticationModule/ViewController/change_password.dart';
 import 'package:easyshop/AuthenticationModule/ViewController/loginscreen.dart';
+import 'package:easyshop/AuthenticationModule/ViewController/profilecontroller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -6,6 +8,7 @@ import '../view/authbuttonsecondscreen.dart';
 import '../view/textformfield.dart';
 import '../view/container.dart';
 import '../view/authbutton.dart';
+import '../ViewController//loginscreen3.dart';
 class LoginScreen2 extends StatefulWidget {
   const LoginScreen2({Key? key}) : super(key: key);
 
@@ -92,6 +95,7 @@ class _LoginScreen2State extends State<LoginScreen2> {
                           ),
 
                           child: AuthButtonScreen2(
+                            onpress: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileController()));},
 
                             childe: Text("SignUp",style: TextStyle(color: Colors.grey[700],fontWeight:FontWeight.bold,fontSize: 20.0),),
 
@@ -317,8 +321,13 @@ class _LoginScreen2State extends State<LoginScreen2> {
                   height: size.height/14,
                   width: size.width/1.2,
                   child: AuthButton(
+
+                      onpres: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen3()));
+
+                    },
                     color: Colors.blue,
                     name: "LogIn",
+                    textcolor: Colors.white,
                     fontsize: 25.0,
                     radius: 10.0,
                     splashcolor: Colors.grey,
@@ -333,7 +342,8 @@ class _LoginScreen2State extends State<LoginScreen2> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TextButton(onPressed: (){},child: Text("Remember Me",style: TextStyle(color: Colors.grey),)),
-                      TextButton(onPressed: (){},child: Text("Forgot Password?",style: TextStyle(color: Colors.grey))),
+                      TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>    ChangePasswordViewController()));
+                    },child: Text("Forgot Password?",style: TextStyle(color: Colors.grey))),
 
 
                     ],
