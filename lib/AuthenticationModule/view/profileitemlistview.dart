@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 class ProfileListView extends StatefulWidget {
   final title,leadingicon,trailingicon,containercolor,latest,ontap;
-  const ProfileListView({Key? key,required this.title,required this.leadingicon,required this.trailingicon, this.containercolor, this.latest="", this.ontap}) : super(key: key);
+  const ProfileListView({Key? key,required this.title,required this.leadingicon, this.trailingicon, this.containercolor, this.latest="", this.ontap}) : super(key: key);
 
   @override
   State<ProfileListView> createState() => _ProfileListViewState();
@@ -41,7 +41,7 @@ class _ProfileListViewState extends State<ProfileListView> {
               )
             ],
           ),
-          trailing: Icon(widget.trailingicon),),
+          trailing: Icon(Icons.arrow_forward_ios_outlined),),
       ),
     );
   }

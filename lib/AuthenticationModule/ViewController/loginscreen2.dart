@@ -7,6 +7,7 @@ import 'package:flutter/widgets.dart';
 import '../view/authbuttonsecondscreen.dart';
 import '../view/textformfield.dart';
 import '../view/container.dart';
+import 'package:easyshop/screendesign/appointment/appointmentcard.dart';
 import '../view/authbutton.dart';
 import '../ViewController//loginscreen3.dart';
 class LoginScreen2 extends StatefulWidget {
@@ -283,7 +284,7 @@ class _LoginScreen2State extends State<LoginScreen2> {
 
                   child:  TextFormFieldView(label: "Email",hint: "Email",
 
-                    obscure: false,
+isPassword: false,
 
                     border: OutlineInputBorder(
 
@@ -304,7 +305,6 @@ class _LoginScreen2State extends State<LoginScreen2> {
                   width: size.width/1.2,
                   child:TextFormFieldView(label: "Password",hint: "Password",
 
-                    obscure: true,
 
                     border: OutlineInputBorder(
 
@@ -341,7 +341,9 @@ class _LoginScreen2State extends State<LoginScreen2> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      TextButton(onPressed: (){},child: Text("Remember Me",style: TextStyle(color: Colors.grey),)),
+                      TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>    CardDesign()));
+                      },child: Text("Remember Me",style: TextStyle(color: Colors.grey),)),
                       TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>    ChangePasswordViewController()));
                     },child: Text("Forgot Password?",style: TextStyle(color: Colors.grey))),
 

@@ -43,26 +43,26 @@ Padding(
           SizedBox(
             height: 35,
           ),
-          ProfileListView(leadingicon: Icons.timer,title:"Order History" ,trailingicon:Icons.forward ,
+          ProfileListView(leadingicon: Icons.timer,title:"Order History" ,
           ),
           SizedBox(height: 5,),
 
-      ProfileListView(leadingicon: Icons.location_on,title:"Shipping Address" ,trailingicon:Icons.forward ,),
+      ProfileListView(leadingicon: Icons.location_on,title:"Shipping Address"  ,),
           SizedBox(height: 5,),
 
-      ProfileListView(leadingicon: Icons.favorite_outline,title:"Whishlist" ,trailingicon:Icons.forward ,latest: "New",containercolor: Colors.red,),
+      ProfileListView(leadingicon: Icons.favorite_outline,title:"Whishlist" ,latest: "New",containercolor: Colors.red,),
           SizedBox(height: 5,),
 
-      ProfileListView(leadingicon: Icons.edit,title:"Edit Profile" ,trailingicon:Icons.forward ,),
+      ProfileListView(leadingicon: Icons.edit,title:"Edit Profile"  ,),
           SizedBox(height: 5,),
 
-      ProfileListView(leadingicon: Icons.notifications,title:"Notifications" ,trailingicon:Icons.forward ,),
+      ProfileListView(leadingicon: Icons.notifications,title:"Notifications" ,),
           SizedBox(height: 5,),
 
-      ProfileListView(leadingicon: Icons.settings,title:"Settings" ,trailingicon:Icons.forward ,),
+      ProfileListView(leadingicon: Icons.settings,title:"Settings"  ,),
           SizedBox(height: 5,),
 
-      ProfileListView(leadingicon: Icons.exit_to_app,title:"Log Out" ,trailingicon:Icons.forward ,),
+      ProfileListView(leadingicon: Icons.exit_to_app,title:"Log Out"  ,),
         ],
       ),
     );

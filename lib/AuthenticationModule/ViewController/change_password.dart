@@ -13,6 +13,7 @@ class ChangePasswordViewController extends StatefulWidget {
 class _ChangePasswordViewControllerState extends State<ChangePasswordViewController> {
   @override
   Widget build(BuildContext context) {
+    var sufixicon=true;
     var size=MediaQuery.of(context).size;
     return Scaffold(
 
@@ -36,16 +37,16 @@ class _ChangePasswordViewControllerState extends State<ChangePasswordViewControl
              SizedBox(height: 25,),
              Text("Current Password"),
 
-              TextFormFieldView(label: "",hint: "Current Password", obscure: true,
-              prefixicon: Icon(Icons.lock,color: Colors.black12,),),
+              TextFormFieldView(label: "",hint: "Current Password",
+                  ),
              SizedBox(height: 25,),
              Text("New Password"),
-              TextFormFieldView(label: "",hint: "New Password", obscure: true,
-              prefixicon: Icon(Icons.lock,color: Colors.black12,),),
+              TextFormFieldView(label: "",hint: "New Password",
+                ),
              SizedBox(height: 25,),
              Text("Confirm Password"),
-              TextFormFieldView(label: "",hint: "Confirm Password", obscure: true,
-              prefixicon: Icon(Icons.lock,color: Colors.black12,),),
+              TextFormFieldView(label: "",hint: "Confirm Password",
+              ),
               SizedBox(height: 35,),
 
               Container(
