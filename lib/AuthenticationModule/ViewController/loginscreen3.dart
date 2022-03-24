@@ -43,7 +43,7 @@ class _LoginScreen3State extends State<LoginScreen3> {
                     children: [
                       Text("InstaGram",style: TextStyle(fontSize: 30,color: Colors.white),),
                       SizedBox(height: size.height/35),
-                      TextFormFieldView(label: "Email", hint: "Email",isPassword: false,
+                      TextFormFieldView(label: "Email", hint: "Email",
 
                         border: OutlineInputBorder(
 
@@ -55,6 +55,7 @@ class _LoginScreen3State extends State<LoginScreen3> {
                       ),
                       SizedBox(height: size.height/35,),
                       TextFormFieldView(label: "Password", hint: "Password",
+                        isPassword: true,
 
                         border: OutlineInputBorder(
 

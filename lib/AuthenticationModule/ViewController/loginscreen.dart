@@ -47,9 +47,10 @@ class _loginPageState extends State<loginPage> {
                       Text("Sign in to continue"),
                       SizedBox(height: 30,),
 
-                      TextFormFieldView(hint: "Email", label: "Email",isPassword: false,),
+                      TextFormFieldView(hint: "Email", label: "Email",),
                       SizedBox(height: 20,),
-                      TextFormFieldView(hint: "Password", label: "Password",),
+                      TextFormFieldView(hint: "Password", label: "Password",
+                        isPassword: true,),
                       SizedBox(height: 7,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,

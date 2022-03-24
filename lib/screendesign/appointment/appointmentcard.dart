@@ -70,7 +70,7 @@ children: [
      ),
    ),
  ),
-  ListTile(title: Text("On InstaGram"),subtitle: Text("@EmailCode"),trailing: Icon(Icons.info,color: Colors.blue,size: 30,),
+  ListTile(title: Text("On InstaGram"),subtitle: Text("@EmailCode"),trailing: Icon(Icons.info,color: Colors.red,size: 30,),
  leading:
 
 

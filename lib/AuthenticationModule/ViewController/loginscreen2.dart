@@ -284,8 +284,6 @@ class _LoginScreen2State extends State<LoginScreen2> {
 
                   child:  TextFormFieldView(label: "Email",hint: "Email",
 
-isPassword: false,
-
                     border: OutlineInputBorder(
 
                       borderRadius: BorderRadius.circular(size.height/100),
@@ -304,6 +302,7 @@ isPassword: false,
 
                   width: size.width/1.2,
                   child:TextFormFieldView(label: "Password",hint: "Password",
+                    isPassword: true,
 
 
                     border: OutlineInputBorder(

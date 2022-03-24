@@ -1,8 +1,10 @@
+import 'package:easyshop/screendesign/profilescreen/profilecontroller.dart';
 import 'package:flutter/material.dart';
 import 'AuthenticationModule/ViewController/loginscreen2.dart';
 import 'screendesign/appointment/appointmentcard.dart';
 import 'AuthenticationModule/ViewController/change_password.dart';
 import 'AuthenticationModule/ViewController/profilecontroller.dart';
+import 'screendesign/customdialog/customdialogcontroller/dialogcontroller.dart';
 
 
 void main(){
@@ -43,7 +45,7 @@ class _splashState extends State<splash> {
   void login()async{
 
     await Future.delayed(Duration(seconds: 3));
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginScreen2()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>ProfoleController1()));
 
   }
 }
